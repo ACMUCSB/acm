@@ -1,12 +1,15 @@
-== ACM Website Project
+ACM Website Project
+===================
 
-=== Why do this project?
+Why do this project?
+--------------------
 
 No public alternatives do what we want perfectly. Also, it's an AWESOME way to
 learn about real world development and to get some great experience working on
 a real project!
 
-=== How to setup
+How to setup
+------------
 
 To run this on your local machine, you need the following --
 
@@ -37,32 +40,36 @@ The files and the sources they are fetched from can be discovered in the Gemfile
 
 Happy hacking!
 
-=== Goals
+Goals
+-----
 
-==== TJ -- the bootstrapper :)
+    TJ -- the bootstrapper :)
+    -------------------------
 
-  * [x] "how to run the app in development"
-  * [x] develop the README to contain relevant development information
-  * [ ] start installing dependencies and getting some code checked in as the base
+      * [x] "how to run the app in development"
+      * [x] develop the README to contain relevant development information
+      * [ ] start installing dependencies and getting some code checked in as the base
 
-==== Development setup
+    Development setup
+    -----------------
 
-  * [ ] use agile development, have 'sprints' and two teams (UI, backend, etc)
-  * [ ] test driven to allow learning a real world development pattern
-  * [x] put it in a public github organizations repository
-     * [ ] allow ACM members to join and contribute on there
-     * [ ] use the ticketing and issue reporting
-     * [x] no publishing passwords in the open! ;)
-  * [ ] deploy on heroku in the beginning -- pay for dns, point acmucsb to it
+      * [ ] use agile development, have 'sprints' and two teams (UI, backend, etc)
+      * [ ] test driven to allow learning a real world development pattern
+      * [x] put it in a public github organizations repository
+         * [ ] allow ACM members to join and contribute on there
+         * [ ] use the ticketing and issue reporting
+         * [x] no publishing passwords in the open! ;)
+      * [ ] deploy on heroku in the beginning -- pay for dns, point acmucsb to it
 
-==== Application milestones
+    Application milestones
+    ----------------------
 
-  * [ ] separation of environments (dev, prod)
-  * [ ] approach a developed code base and contribute to it, improve it
-  * [ ] secure, private, and reliable communication between officers
-  * [ ] allow members to submit feedback and allow officers to see and discuss it
-  * [ ] allow creation of events + many methods of subscribing / unsubscribing
-     * [ ] email, sms, Facebook message, etc.
-  * [ ] site restrictions
-     * [ ] ROLES = guests, members, officers + specific officer positions
-     * [ ] expose appropriate pages + actions to specific roles
+      * [ ] separation of environments (dev, prod)
+      * [ ] approach a developed code base and contribute to it, improve it
+      * [ ] secure, private, and reliable communication between officers
+      * [ ] allow members to submit feedback and allow officers to see and discuss it
+      * [ ] allow creation of events + many methods of subscribing / unsubscribing
+         * [ ] email, sms, Facebook message, etc.
+      * [ ] site restrictions
+         * [ ] ROLES = guests, members, officers + specific officer positions
+         * [ ] expose appropriate pages + actions to specific roles
