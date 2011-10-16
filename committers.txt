@@ -1,4 +1,0 @@
-# THIS IS THE COMMITTERS FILE. IF YOU AREN'T A COMMITTER, GTFO.
-
-TJ Koblentz
-Mike Soennichsen-msoennichsen@umail.ucsb.edu
