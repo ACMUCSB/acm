@@ -1,7 +1,8 @@
 # THIS IS THE COMMITTERS FILE. IF YOU AREN'T A COMMITTER, GTFO.
 
 TJ Koblentz
-Omar Masri marismaro@gmail.com
 Andrew Berls andrew.berls@gmail.com
 Pete Cruz Petesta@live.com
 Sean Chen scmetallica@gmail.com
+Mike Soennichsen msoennichsen@umail.ucsb.edu
+Omar Masri marismaro@gmail.com
