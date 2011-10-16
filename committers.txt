@@ -1,0 +1,6 @@
+# THIS IS THE COMMITTERS FILE. IF YOU AREN'T A COMMITTER, GTFO.
+
+TJ Koblentz
+Andrew Berls andrew.berls@gmail.com
+Pete Cruz Petesta@live.com
+Mike Soennichsen msoennichsen@umail.ucsb.edu
