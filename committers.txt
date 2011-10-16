@@ -1,4 +1,7 @@
 # THIS IS THE COMMITTERS FILE. IF YOU AREN'T A COMMITTER, GTFO.
 
 TJ Koblentz
+Andrew Berls andrew.berls@gmail.com
+Pete Cruz Petesta@live.com
+Sean Chen scmetallica@gmail.com
 Aki Stankoski astankoski@gmail.com
