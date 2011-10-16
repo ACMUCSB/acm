@@ -3,4 +3,8 @@
 TJ Koblentz
 Andrew Berls andrew.berls@gmail.com
 Pete Cruz Petesta@live.com
+<<<<<<< HEAD
 Mike Soennichsen msoennichsen@umail.ucsb.edu
+=======
+Sean Chen scmetallica@gmail.com
+>>>>>>> f6719a41455cece12d20ea2198da66419cefa42e
