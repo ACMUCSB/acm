@@ -1,8 +1,7 @@
 # THIS IS THE COMMITTERS FILE. IF YOU AREN'T A COMMITTER, GTFO.
 
 TJ Koblentz
-<<<<<<< HEAD
 Omar Masri marismaro@gmail.com
-=======
 Andrew Berls andrew.berls@gmail.com
->>>>>>> c1153facdde4c522b03533d2cd90dbd4f2f19d87
+Pete Cruz Petesta@live.com
+Sean Chen scmetallica@gmail.com
