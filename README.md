@@ -1,6 +1,11 @@
 ACM Website Project
 ===================
 
+Resources
+---------
+- rubyonrails.org
+- railscasts.com
+
 Why do this project?
 --------------------
 
