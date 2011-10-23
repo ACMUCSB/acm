@@ -6,6 +6,26 @@ Resources
 - rubyonrails.org
 - railscasts.com
 
+HTML/CSS
+----
+http://developer.mozilla.org
+http://htmldog.com
+http://cssbasics.com
+http://css-tricks.com
+
+JavaScript
+----
+http://developer.mozilla.org/en-US/learn/javascript
+http://eloquentjavascript.net/print.html
+
+Blogs
+----
+smashingmagazine.com
+webdesignerdepot.com
+uxmovement.com
+alistapart.com
+siteinspire.com
+
 Why do this project?
 --------------------
 
