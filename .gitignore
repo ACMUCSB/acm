@@ -1,3 +1,7 @@
+# important stuff that should be ignored
+tmp/
+db/*.sqlite3
+
 # Numerous always-ignore extensions
 *.diff
 *.err
