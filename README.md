@@ -20,11 +20,11 @@ JavaScript
 
 Blogs
 ----
-- smashingmagazine.com
-- webdesignerdepot.com
-- uxmovement.com
-- alistapart.com
-- siteinspire.com
+- http://www.smashingmagazine.com
+- http://www.webdesignerdepot.com
+- http://uxmovement.com
+- http://www.alistapart.com
+- http://siteinspire.com
 
 Why do this project?
 --------------------
