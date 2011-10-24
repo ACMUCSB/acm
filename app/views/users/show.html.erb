@@ -1,5 +1,35 @@
 <p id="notice"><%= notice %></p>
 
+<p>
+  <b>Fullname:</b>
+  <%= @user.fullname %>
+</p>
+
+<p>
+  <b>Nickname:</b>
+  <%= @user.nickname %>
+</p>
+
+<p>
+  <b>Encrypted password:</b>
+  <%= @user.encrypted_password %>
+</p>
+
+<p>
+  <b>Password salt:</b>
+  <%= @user.password_salt %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @user.email %>
+</p>
+
+<p>
+  <b>Grad year:</b>
+  <%= @user.grad_year %>
+</p>
+
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>

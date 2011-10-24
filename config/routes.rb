@@ -1,6 +1,11 @@
 Acm::Application.routes.draw do
   resources :users
 
+  get "static/index"
+
+  get "static/contact_us"
+
+  match '/contact-us' => 'static#contact_us', :as => :contact
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -9,7 +14,7 @@ Acm::Application.routes.draw do
   # Keep in mind you can assign values other than :controller and :action
 
   # Sample of named route:
-  match '/contact-us' => 'static#contact_us', :as => :contact
+  #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
   # This route can be invoked with purchase_url(:id => product.id)
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
@@ -50,7 +55,7 @@ Acm::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => "static#index"
+  root :to => 'static#index'
 
   # See how all your routes lay out with "rake routes"
 

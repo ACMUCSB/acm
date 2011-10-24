@@ -1,17 +1,17 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  full_name: 
-  nickname: 
-  encrypted_password: 
-  password_salt: 
-  email: 
-  grad_year: 
+  fullname: MyString
+  nickname: MyString
+  encrypted_password: MyString
+  password_salt: MyString
+  email: MyString
+  grad_year: 1
 
 two:
-  full_name: 
-  nickname: 
-  encrypted_password: 
-  password_salt: 
-  email: 
-  grad_year: 
+  fullname: MyString
+  nickname: MyString
+  encrypted_password: MyString
+  password_salt: MyString
+  email: MyString
+  grad_year: 1

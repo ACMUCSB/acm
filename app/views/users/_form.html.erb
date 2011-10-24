@@ -11,9 +11,30 @@
     </div>
   <% end %>
 
-  <%= f.label :full_name %>
-  <%= f.text_field :full_name %>
-
+  <div class="field">
+    <%= f.label :fullname %><br />
+    <%= f.text_field :fullname %>
+  </div>
+  <div class="field">
+    <%= f.label :nickname %><br />
+    <%= f.text_field :nickname %>
+  </div>
+  <div class="field">
+    <%= f.label :encrypted_password %><br />
+    <%= f.text_field :encrypted_password %>
+  </div>
+  <div class="field">
+    <%= f.label :password_salt %><br />
+    <%= f.text_field :password_salt %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :grad_year %><br />
+    <%= f.number_field :grad_year %>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>

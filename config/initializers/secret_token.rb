@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Acm::Application.config.secret_token = '88ce498603f067caf0b4b9f6fe21b543601bda4f2b51e09b0ff22c3f1e08e40b5a38c7d3bda4f3c6bcf4440849aeb751224d43e79467040515f35db24948eb17'
+Acm::Application.config.secret_token = 'eabd75c67937d52b388c6e2538c1334a3fe8f3f80d20a3ffbbdb138d267f5d3ce26d45948a6271ba10be5a85df3afc0b3ce12e9b86c34ec61ed604d48ffe4aa8'

@@ -2,6 +2,12 @@
 
 <table>
   <tr>
+    <th>Fullname</th>
+    <th>Nickname</th>
+    <th>Encrypted password</th>
+    <th>Password salt</th>
+    <th>Email</th>
+    <th>Grad year</th>
     <th></th>
     <th></th>
     <th></th>
@@ -9,9 +15,15 @@
 
 <% @users.each do |user| %>
   <tr>
+    <td><%= user.fullname %></td>
+    <td><%= user.nickname %></td>
+    <td><%= user.encrypted_password %></td>
+    <td><%= user.password_salt %></td>
+    <td><%= user.email %></td>
+    <td><%= user.grad_year %></td>
     <td><%= link_to 'Show', user %></td>
     <td><%= link_to 'Edit', edit_user_path(user) %></td>
-    <td><%= link_to 'Destroy', user, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Destroy', user, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>
 </table>
