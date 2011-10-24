@@ -8,7 +8,7 @@ When you come up with ideas add them here.
 	index page
 		-get people to write the html/erb to get general features.
 		-if someone is interested in design/layout they tackle this part. CSS or SASS, javascript, I don't know...
-
+		-a simple, classy design with a nice type face...comic sans? lulz
 		things we may want to include on the landing page:
 			-upcoming event
 			-tech/acm news
@@ -44,3 +44,8 @@ When you come up with ideas add them here.
 	After I log in I would like some way to find and view other peoples info. I would like to be able to see year, major, name,
 	email, phone, general info, skills, etc.(users can choose what they want to share). If this information is available it is easier
 	to get in contact with people and possibly get help with stuff.
+
+	Notifications
+		-email
+		-text
+		-some way to stop getting the texts and emails
