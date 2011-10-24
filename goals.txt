@@ -2,26 +2,27 @@
 When you come up with ideas add them here.
 --SHORT TERM--
 	contact page
-		-email address(could be changed later to acmblah@domainName.com) 
+		-email address(could be changed later to acmblah@domainName.com)
 		-phone(maybe not?)
 		-email form...who it is from, sender's email, subject, and message boxes.
 	index page
 		-get people to write the html/erb to get general features.
 		-if someone is interested in design/layout they tackle this part. CSS or SASS, javascript, I don't know...
-	
+
 		things we may want to include on the landing page:
 			-upcoming event
 			-tech/acm news
 			-polls
-			-login 
+			-login
 	mailing list
 		-ability to sign up (has some type of captcha/email validation)
 		-ability to remove yourself from the list
-	
+
 	about us page
-	
+
 	calendar/events page
-		
+                - event notifications (email, SMS, whatever)
+
 	a more complete, well organized user database schema
 --LONG TERM--
 	user forum
@@ -32,7 +33,7 @@ When you come up with ideas add them here.
 		-general
 		-announcements
 
-	irc? would probably be underutilized 
+	irc? would probably be underutilized
 
 	different stylesheets users can choose from
 
@@ -40,6 +41,6 @@ When you come up with ideas add them here.
 
 	optimized search because no one likes slow crappy searches
 
-	After I log in I would like some way to find and view other peoples info. I would like to be able to see year, major, name, 
+	After I log in I would like some way to find and view other peoples info. I would like to be able to see year, major, name,
 	email, phone, general info, skills, etc.(users can choose what they want to share). If this information is available it is easier
 	to get in contact with people and possibly get help with stuff.

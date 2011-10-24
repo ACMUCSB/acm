@@ -1,1 +1,14 @@
-Contact us
+<h2>Contact Us</h2>
+
+<dl>
+  <dt>Email</dt>
+  <dd>acm@ucsb.edu</dd>
+  <dt>Phone</dt>
+  <dd>(805) 123-4567</dd>
+</dl>
+
+<%= form_tag '' do %>
+  <%= label_tag 'Leave a comment' %>
+  <%= text_area 'bla', 'bla' %>
+  <%= submit_tag 'Submit' %>
+<% end %>
