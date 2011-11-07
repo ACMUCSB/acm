@@ -33,8 +33,6 @@ When you come up with ideas add them here.
 		-general
 		-announcements
 
-	irc? would probably be underutilized
-
 	different stylesheets users can choose from
 
 	increased security...depends if anyone is interested in this kind of thing.
@@ -49,3 +47,23 @@ When you come up with ideas add them here.
 		-email
 		-text
 		-some way to stop getting the texts and emails
+
+
+--NOTES FROM 11/6/11
+MODELS
+-user
+-events
+	-title
+	-description
+	-picture
+	-attachments
+	-timestamp
+	-attendees
+-forum posts
+	-id
+	-title
+	-body
+	-user_id
+	-parent_id
+	-timestamp
+	-attachments
