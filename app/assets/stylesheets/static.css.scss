@@ -53,11 +53,7 @@ body {
 
   a {
     color: red;
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
+    text-decoration: none;  
   }
 }
 
@@ -65,9 +61,20 @@ body {
   overflow: hidden;
   border-top: 1px solid #aaa;
   
-  li {
-    float: left;
+  li {    
     margin: 10px;
+    
+    a {
+      background-color: #5EC4F0;     
+      display: block; 
+      float: left;
+      margin-right: 10px;
+      padding: 3px 7px;
+      
+      &:hover {
+        background-color: white;        
+      }
+    }
   }
 }
 
