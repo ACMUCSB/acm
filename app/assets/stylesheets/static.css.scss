@@ -2,6 +2,20 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+//---------- TEMPORARY DEV
+
+#container {background-color: orange;}
+#header    {background-color: yellow;}
+#nav       {background-color: green;}
+#content   {background-color: blue;}
+#timeline  {background-color: purple;}
+
+
+//---------- END TEMPORARY DEV
+
+
+
+
 html {
   overflow-y: scroll;
 }
@@ -29,13 +43,15 @@ body {
   margin: 0 auto;
   overflow: hidden;
   text-align: left;
-  width: 720px;
-  padding: 0 30px;
+  //width: 720px;
+  width: 960px;
+  //padding: 0 30px;
 }
 
 #header {
   overflow: auto;
-  padding: 10px 30px 0;
+  //padding: 10px 30px 0;
+  padding: 10px 0 0;
 
   a { //This is a Sass nested rule
     color: red;
@@ -50,32 +66,76 @@ body {
 #nav {
   overflow: hidden;
   border-top: 1px solid #aaa;
+  
   li {
     float: left;
     margin: 10px;
   }
 }
 
+#timeline {  
+  border-bottom: 1px solid #aaa;
+  border-top: 1px solid #aaa;  
+  overflow: hidden;
+  padding: 10px 0;
+  
+  
+  .event {
+    background-color: yellow;
+    float: left;
+    margin-right: 25px;
+    overflow: auto;    
+    width: 400px;
+    
+    a {
+      background-color: #0fc;
+      display: block;
+      float: left;
+      height: 150px;      
+      width: 225px;
+    }
+    
+    .eventText {
+      background-color: red;
+      float: left;
+      width: 175px;
+      
+        h4, p {
+          float: left;
+          margin-left: 10px;
+        }
+        
+        p {      
+                         
+          &.eventTime {            
+            margin-left: 15px;
+          }
+        }
+    }
+
+    
+    
+    
+  }
+  
+  /*li {
+    background: #ccc;
+    float: left;
+    margin-right: 20px;        
+    padding: 20px;
+  }*/
+}
+
 #content {
   min-height: 400px;
   padding: 10px;
+  
   p {
     margin: 10px 0;
   }
 }
 
-#timeline {
-  padding: 10px 0;
-  border-top: 1px solid #aaa;
-  border-bottom: 1px solid #aaa;
-  overflow: hidden;
-  li {
-    padding: 20px;
-    margin-right: 20px;
-    background: #ccc;
-    float: left;
-  }
-}
+
 
 #footer {
   height: 50px;
