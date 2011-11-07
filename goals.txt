@@ -1,3 +1,10 @@
+-- TO DO --
+- Figure out how to compress the SASS css output. No point in keeping it the way it is now.
+- The header nav is too close to the event slider. How can we differentiate them?
+
+
+
+
 --GOALS--
 When you come up with ideas add them here.
 --SHORT TERM--
