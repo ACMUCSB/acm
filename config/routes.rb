@@ -1,11 +1,8 @@
 Acm::Application.routes.draw do
   resources :users
 
-  get "static/index"
-
-  get "static/contact_us"
-
-  match '/contact-us' => 'static#contact_us', :as => :contact
+  match '/about' => 'static#about', as: :about
+  match '/contact-us' => 'static#contact_us', as: :contact
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
