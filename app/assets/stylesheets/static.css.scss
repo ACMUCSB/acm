@@ -2,22 +2,22 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-//---------- TEMPORARY DEV
+//---------- TEMPORARY DEV STYLES
 
-#container {background-color: orange;}
-#header    {background-color: yellow;}
-#nav       {background-color: green;}
-#content   {background-color: blue;}
-#timeline  {background-color: purple;}
-
+*          { border: none !important;  } // ULTRA GHETTO TEMPORARY RULE I CHOOSE YOU!
+#container { background-color: orange; }
+#header    { background-color: yellow; }
+#nav       { background-color: green;  }
+#content   { background-color: pink;   }
+#timeline  { background-color: purple; }
+.event     { background-color: yellow; }
+.eventText { background-color: red;    }
 
 //---------- END TEMPORARY DEV
 
-
-
-
 html {
-  overflow-y: scroll;
+  // Why is this here?
+  overflow-y: scroll; 
 }
 
 #title {
@@ -42,22 +42,20 @@ body {
 #container {
   margin: 0 auto;
   overflow: hidden;
-  text-align: left;
-  //width: 720px;
-  width: 960px;
+  text-align: left;  
+  width: 960px; //720px
   //padding: 0 30px;
 }
 
 #header {
   overflow: auto;
-  //padding: 10px 30px 0;
-  padding: 10px 0 0;
+  padding: 10px 0 0; //10px 30px 0
 
-  a { //This is a Sass nested rule
+  a {
     color: red;
     text-decoration: none;
 
-    &:hover { //This is a Sass parent selector
+    &:hover {
       text-decoration: underline;
     }
   }
@@ -80,15 +78,14 @@ body {
   padding: 10px 0;
   
   
-  .event {
-    background-color: yellow;
+  .event {    
     float: left;
     margin-right: 25px;
-    overflow: auto;    
+    //overflow: auto;    
     width: 400px;
     
     a {
-      background-color: #0fc;
+      background-color: #0fc; // PLACEHOLDER FOR ACTUAL IMAGE
       display: block;
       float: left;
       height: 150px;      
@@ -96,34 +93,24 @@ body {
     }
     
     .eventText {
-      background-color: red;
+      
       float: left;
       width: 175px;
       
-        h4, p {
-          float: left;
-          margin-left: 10px;
-        }
-        
-        p {      
-                         
-          &.eventTime {            
-            margin-left: 15px;
-          }
-        }
-    }
-
+      h4, p {
+        float: left;
+        margin-left: 10px;
+      }
+      
+      .eventTime {
+        // I put eventTime in its own class so that we could do something like
+        // indenting the date to the right of the event title and maybe
+        // make it a subdued gray or something. Just an idea.
+        margin-left: 15px;
+      }      
+    }    
     
-    
-    
-  }
-  
-  /*li {
-    background: #ccc;
-    float: left;
-    margin-right: 20px;        
-    padding: 20px;
-  }*/
+  }  
 }
 
 #content {
@@ -135,8 +122,6 @@ body {
   }
 }
 
-
-
 #footer {
-  height: 50px;
+  height: 40px;
 }
