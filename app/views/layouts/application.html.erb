@@ -11,16 +11,26 @@
 
     <div id="container">
 
-      <div id="header">
-        <h1 id="title"><%= link_to 'ACM@UCSB', root_path %></h1>
-        <ul id="nav">
-          <li><%= link_to 'Announcements', root_path %></li>
-          <li><%= link_to 'Forum', '' %></li>
-          <li><%= link_to 'About', about_path %></li>
-          <li><%= link_to 'Contact', contact_path %></li>
-          <li><%= link_to 'Sitemap', '/sitemap.txt' %></li>
-        </ul>
-      </div>
+	<div id="header">
+		<h1 id="title"><%= link_to 'ACM@UCSB', root_path %></h1>
+		
+		<% if current_user %>
+			<p class="credentials">Logged in as <%= current_user.nickname %></p>
+			<%= link_to "Log out", logout_path %>
+			
+		<% else %>
+			<%= link_to "Sign Up", signup_path %> or 
+			<%= link_to "log in", login_path %>
+	   	<% end %>
+		   
+		    <ul id="nav">
+		  <li><%= link_to 'Announcements', root_path %></li>
+		  <li><%= link_to 'Forum', '' %></li>
+		  <li><%= link_to 'About', about_path %></li>
+		  <li><%= link_to 'Contact', contact_path %></li>
+		  <li><%= link_to 'Sitemap', '/sitemap.txt' %></li>
+		</ul>
+	</div>
 
 	 
 
