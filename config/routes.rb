@@ -1,8 +1,15 @@
 Acm::Application.routes.draw do
-  resources :users
+  
+  get "/logout" => "sessions#destroy", :as => "logout"
+  get "/login" =>"sessions#new", :as => "login"
+  get "/signup" => "users#new", :as => "signup"
 
   match '/about' => 'static#about', as: :about
   match '/contact-us' => 'static#contact_us', as: :contact
+    
+  resources :users  
+  resources :sessions
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

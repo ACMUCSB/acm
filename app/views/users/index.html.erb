@@ -2,7 +2,7 @@
 
 <table>
   <tr>
-    <th>Fullname</th>
+    <th>Full Name</th>
     <th>Nickname</th>
     <th>Encrypted password</th>
     <th>Password salt</th>
@@ -15,7 +15,7 @@
 
 <% @users.each do |user| %>
   <tr>
-    <td><%= user.fullname %></td>
+    <td><%= user.full_name %></td>
     <td><%= user.nickname %></td>
     <td><%= user.encrypted_password %></td>
     <td><%= user.password_salt %></td>
