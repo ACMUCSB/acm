@@ -17,7 +17,7 @@
 
 html {
   // Why is this here?
-  overflow-y: scroll; 
+  overflow-y: scroll;
 }
 
 #title {
@@ -36,15 +36,15 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   line-height: 1.6;
-  text-align: center;  
+  text-align: center;
 }
 
 #container {
   margin: 0 auto;
   overflow: hidden;
   //padding: 0 30px;
-  text-align: left;  
-  width: 960px; //720px  
+  text-align: left;
+  width: 960px; //720px
 }
 
 #header {
@@ -53,101 +53,104 @@ body {
 
   a {
     color: red;
-    text-decoration: none;  
+    text-decoration: none;
   }
 }
 
 #nav {
   overflow: hidden;
   border-top: 1px solid #aaa;
-  
-  li {    
+
+  li {
     margin: 10px;
-    
+
     a {
-      background-color: #5EC4F0;     
-      display: block; 
+      background-color: #5EC4F0;
+      display: block;
       float: left;
       margin-right: 10px;
       padding: 3px 7px;
-      
+
       &:hover {
-        background-color: orange;        
+        background-color: orange;
       }
     }
   }
 }
 
-#timeline {  
+#timeline {
   border-bottom: 1px solid #aaa;
   border-top: 1px solid #aaa;
   margin-bottom: 20px;
   overflow: hidden;
   padding: 10px 0;
-    
-  .event {    
+
+  .event {
     float: left;
     margin-right: 25px;
-    //overflow: auto;    
+    //overflow: auto;
     width: 400px;
-    
+
     a {
       background-color: #0fc; // PLACEHOLDER FOR ACTUAL IMAGE
       display: block;
       float: left;
-      height: 150px;      
+      height: 150px;
       width: 225px;
     }
-    
-    .eventText {      
+
+    .eventText {
       float: left;
       width: 175px;
-      
+
       h4, p {
         float: left;
         margin-left: 10px;
       }
-      
+
       .eventTime {
         // I put eventTime in its own class so that we could do something like
         // indenting the date to the right of the event title and maybe
         // make it a subdued gray or something. Just an idea.
         margin-left: 15px;
-      }      
-    }    
-  }  
+      }
+    }
+  }
 }
 
 #content {
   min-height: 400px;
   overflow: auto;
   padding: 10px;
-  
+
   p {
     margin: 10px 0;
   }
 }
 
+#main {
+  float: left;
+  width: 600px;
+}
+
 .post {
   $border: #F00;
-     
+
   background-color: orange;
   border: 1px solid $border;
   border-radius: 5px;
-  float: left;
   margin-bottom: 20px;
   position: relative;
-  width: 600px;
-  
+
   h3 {
     border-bottom: 1px solid $border;
-    padding: 5px;    
+    padding: 5px;
   }
-  
+
   p {
     padding: 5px;
     padding-top: 0;
-    
+
     &.postTimestamp {
       padding: 0;
       position: absolute;
@@ -165,13 +168,13 @@ body {
   padding: 0;
   //min-height: 400px;
   width: 320px;
-  
+
   h3 {
     border-bottom: 1px solid orange;
     margin-bottom: 15px;
     padding-left: 5px;
   }
-  
+
   .tickerPost {
     background-color: white;
     border: 1px solid blue;

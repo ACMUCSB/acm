@@ -11,32 +11,59 @@
 
     <div id="container">
 
-	<div id="header">
-		<h1 id="title"><%= link_to 'ACM@UCSB', root_path %></h1>
-							   		
-		<ul id="nav">
-		  <li><%= link_to 'Announcements', root_path %></li>
-		  <li><%= link_to 'Forum', '' %></li>
-		  <li><%= link_to 'About', about_path %></li>
-		  <li><%= link_to 'Contact', contact_path %></li>
-		  <li><%= link_to 'Sitemap', '/sitemap.txt' %></li>
-		</ul>
-	</div>
+      <div id="header">
+        <h1 id="title"><%= link_to 'ACM@UCSB', root_path %></h1>
 
-	 
-
-
-      <div id="content">
-		
-		<%# flash.each do |name, msg| %>
-			<%# content_tag :div, msg, :id => "flash#{name}"%>
-		<%# end %>
-		
-        <%= yield %>
-
+        <ul id="nav">
+          <li><%= link_to 'Announcements', root_path %></li>
+          <li><%= link_to 'Forum', '' %></li>
+          <li><%= link_to 'About', about_path %></li>
+          <li><%= link_to 'Contact', contact_path %></li>
+          <li><%= link_to 'Sitemap', '/sitemap.txt' %></li>
+        </ul>
       </div>
 
-      <div id="footer"></div>
+      <div id="content">
+        <%# flash.each do |name, msg| %>
+          <%# content_tag :div, msg, :id => "flash#{name}"%>
+        <%# end %>
+        <div id="timeline">
+          <!-- THESE ARE HTML PLACEHOLDERS PURELY FOR STYLING WHAT WILL BE DYNAMICALLY-GENERATED EVENTS -->
+          <div class="event">
+            <a href="">Image will be here</a>
+            <div class="eventText">
+              <h4>General Meeting #1</h4>
+              <p class="eventTime">11/11/11, 2:30pm</p>
+              <p>Description test test test test test</p>
+            </div>
+          </div>
+
+          <div class="event">
+            <a href="">Image will be here</a>
+            <div class="eventText">
+              <h4>General Meeting #2</h4>
+              <p class="eventTime">11/11/11, 2:30pm</p>
+              <p>Description test test test test test</p>
+            </div>
+          </div>
+        </div>
+        <div id="main">
+          <%= yield %>
+        </div>
+        <!-- PUT THE RECENT POSTS RIGHT HERE -->
+        <div id="ticker">
+          <h3>Recent Posts</h3>
+          <div class="tickerPost">
+            <p>Fake Name posted in Forum Location</p>
+          </div>
+          <div class="tickerPost">
+            <p>Fake Name posted in Forum Location</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="footer">
+      </div>
 
     </div>
 
