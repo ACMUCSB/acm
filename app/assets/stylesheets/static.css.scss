@@ -7,7 +7,7 @@
 // Enter 21297c in the RGB section.
 
 $blue: #21297C; // Main UCSB blue
-$background: #2A2F5D; //Subdued blue for background
+$background: #ccc; //#2A2F5D; //Subdued blue for background
 $dark_blue: #0b1151;
 $light_blue: #555fbe;
 $baby_blue: #7178be; // You're probably a bad person for using this color
@@ -16,7 +16,7 @@ $gold: #F6B118; // Main UCSB gold
 //---------- TEMPORARY DEV STYLES
 
 //*          { border: none !important;  } // ULTRA GHETTO TEMPORARY RULE I CHOOSE YOU!
-body       { background-color: #2A2F5D; }
+body       { background-color: $background; }
 #container { background-color: red; }
 #header    { background-color: $gold; }
 #nav       { background-color: green; }
@@ -149,7 +149,7 @@ body {
 
 .post {
   $border: #F00;
-  
+
   //border: 1px solid $border;
   border-radius: 5px;
   margin-bottom: 20px;
@@ -204,5 +204,7 @@ body {
 }
 
 #footer {
-  height: 40px;
+  padding: 5px 0;
+  color: white;
+  text-align: center;
 }

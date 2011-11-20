@@ -1,15 +1,24 @@
 Acm::Application.routes.draw do
-  
+
+  # change this
+  get "posts/index"
+  get "posts/new"
+  get "posts/create"
+  get "posts/edit"
+  get "posts/update"
+  get "posts/destroy"
+  match '/forum' => "posts#index", :as => "forum"
+
   get "/logout" => "sessions#destroy", :as => "logout"
   get "/login" =>"sessions#new", :as => "login"
   get "/signup" => "users#new", :as => "signup"
 
   match '/about' => 'static#about', as: :about
   match '/contact-us' => 'static#contact_us', as: :contact
-    
-  resources :users  
+
+  resources :users
   resources :sessions
-  
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
