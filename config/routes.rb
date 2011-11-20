@@ -6,12 +6,20 @@ Acm::Application.routes.draw do
 
   match '/about'      => 'static#about',      as: :about
   match '/contact-us' => 'static#contact_us', as: :contact
-    
-  resources :users  
+  
+  # change this
+  get "posts/index"
+  get "posts/new"
+  get "posts/create"
+  get "posts/edit"
+  get "posts/update"
+  get "posts/destroy"
+  match '/forum' => "posts#index", :as => "forum"
+
+  resources :users
   resources :sessions
   
   root :to => 'static#index'
-  
   
   # The priority is based upon order of creation:
   # first created -> highest priority.
