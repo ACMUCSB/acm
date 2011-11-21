@@ -30,7 +30,6 @@ body       { background-color: #2A2F5D; }
 //---------- END TEMPORARY DEV
 
 html {
-  // Why is this here?
   overflow-y: scroll;
 }
 
@@ -55,12 +54,6 @@ body {
   text-align: center;
 }
 
-#flashnotice {
-  background-color: pink;
-  border: 2px solid red;
-  margin-bottom: 10px;
-}
-
 #container {
   margin: 0 auto;
   overflow: hidden;
@@ -71,6 +64,7 @@ body {
 
 .flash {
   padding: 5px 0;
+  margin-bottom: 10px;
   text-align: center;
 }
 #flash_alert {
@@ -176,7 +170,7 @@ body {
 
 .post {
   $border: yellow;
-  
+
   //border: 1px solid $border;
   border-radius: 5px;
   margin-bottom: 20px;

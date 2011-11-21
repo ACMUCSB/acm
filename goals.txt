@@ -74,3 +74,8 @@ MODELS
 	-parent_id
 	-timestamp
 	-attachments
+
+stuff to fix in the future
+==========================
+- dealing with shared folder -- bad... too little differences between forum and app layout
+- get rid of lots of useless shit
