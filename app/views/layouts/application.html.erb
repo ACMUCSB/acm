@@ -26,7 +26,7 @@
 
       <div id="content">
         <% flash.each do |name, msg| %>
-          <%= content_tag :div, msg, :id => "flash#{name}"%>
+          <%= content_tag :div, msg, :class => "flash", :id => "flash_#{name}"%>
         <% end %>
         <div id="timeline">
           <!-- THESE ARE HTML PLACEHOLDERS PURELY FOR STYLING WHAT WILL BE DYNAMICALLY-GENERATED EVENTS -->
