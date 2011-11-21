@@ -18,6 +18,7 @@ end
 gem 'therubyracer'
 gem 'jquery-rails'
 gem 'cancan'
+gem 'heroku'
 
 gem 'bcrypt-ruby', :require => 'bcrypt'
 
