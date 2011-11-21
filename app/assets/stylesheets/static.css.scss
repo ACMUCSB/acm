@@ -17,14 +17,14 @@ $gold: #F6B118; // Main UCSB gold
 
 //*          { border: none !important;  } // ULTRA GHETTO TEMPORARY RULE I CHOOSE YOU!
 body       { background-color: #2A2F5D; }
-#container { background-color: red; }
-#header    { background-color: $gold; }
-#nav       { background-color: green; }
-#content   { background-color: $light_blue; }
+#container { background-color: #6699FF; }
+#header    { background-color: $dark_blue; }
+#nav       { background-color: #6699FF; }
+#content   { background-color: white; }
 .post      { background-color: #F9F9F9; }
 #timeline  { background-color: $dark_blue; }
-.event     { background-color: yellow; }
-.eventText { background-color: red; }
+.event     { background-color: $baby_blue; }
+.eventText { background-color: $light_blue; }
 .field     { background-color: #0FC; }
 
 //---------- END TEMPORARY DEV
@@ -66,7 +66,7 @@ body {
   padding: 10px 0 0; //10px 30px 0
 
   a {
-    color: red;
+    color: yellow;
     text-decoration: none;
   }
 }
@@ -79,7 +79,7 @@ body {
     margin: 10px;
 
     a {
-      background-color: #5EC4F0;
+      background-color: $blue;
       display: block;
       float: left;
       margin-right: 10px;
@@ -106,7 +106,7 @@ body {
     width: 400px;
 
     a {
-      background-color: #0fc; // PLACEHOLDER FOR ACTUAL IMAGE
+      background-color: #cfcfcf; // PLACEHOLDER FOR ACTUAL IMAGE
       display: block;
       float: left;
       height: 150px;
@@ -148,7 +148,7 @@ body {
 }
 
 .post {
-  $border: #F00;
+  $border: yellow;
   
   //border: 1px solid $border;
   border-radius: 5px;
@@ -182,7 +182,7 @@ body {
 
 
 #ticker {
-  background-color: red;
+  background-color: $blue;
   float: right;
   margin: 0;
   padding: 0;
@@ -191,7 +191,7 @@ body {
 
   h3 {
     //background-color: #CCC;
-    border-bottom: 1px solid orange;
+    border-bottom: 1px solid yellow;
     margin-bottom: 15px;
     padding-left: 5px;
   }
