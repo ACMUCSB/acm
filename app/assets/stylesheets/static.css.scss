@@ -7,7 +7,7 @@
 // Enter 21297c in the RGB section.
 
 $blue: #21297C; // Main UCSB blue
-$background: #ccc; //#2A2F5D; //Subdued blue for background
+$background: #ccc; //#2A2F5D;
 $dark_blue: #0b1151;
 $light_blue: #555fbe;
 $baby_blue: #7178be; // You're probably a bad person for using this color
@@ -15,16 +15,6 @@ $gold: #F6B118; // Main UCSB gold
 
 //---------- TEMPORARY DEV STYLES
 
-//*          { border: none !important;  } // ULTRA GHETTO TEMPORARY RULE I CHOOSE YOU!
-body       { background-color: #2A2F5D; }
-#container { background-color: #6699FF; }
-#header    { background-color: $dark_blue; }
-#nav       { background-color: #6699FF; }
-#content   { background-color: white; }
-.post      { background-color: #F9F9F9; }
-#timeline  { background-color: $dark_blue; }
-.event     { background-color: $baby_blue; }
-.eventText { background-color: $light_blue; }
 .field     { background-color: #cfcfcf; }
 
 //---------- END TEMPORARY DEV
@@ -48,6 +38,7 @@ h2 {
 }
 
 body {
+  background-color: #2A2F5D;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   line-height: 1.6;
@@ -55,7 +46,11 @@ body {
 }
 
 #container {
-  margin: 0 auto;
+  background-color: #6699FF;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  margin: 20px auto;
   overflow: hidden;
   //padding: 0 30px;
   text-align: left;
@@ -77,9 +72,14 @@ body {
 }
 
 #header {
+  background-color: $dark_blue;
   overflow: auto;
-  padding: 10px 0 0; //10px 30px 0
+  padding: 10px 0 0; //10px 30px 0  
 
+  #title {
+    margin-left: 10px;
+  }
+  
   #user_info {
     float: right;
     width: 500px;
@@ -92,6 +92,7 @@ body {
 }
 
 #nav {
+  background-color: #6699FF;
   clear: both;
   overflow: hidden;
   border-top: 1px solid #aaa;
@@ -114,6 +115,7 @@ body {
 }
 
 #timeline {
+  background-color: $dark_blue;
   border-bottom: 1px solid #aaa;
   border-top: 1px solid #aaa;
   margin-bottom: 20px;
@@ -121,6 +123,7 @@ body {
   padding: 10px 0;
 
   .event {
+    background-color: $baby_blue;
     float: left;
     margin-left: 25px;
     //overflow: auto;
@@ -135,6 +138,7 @@ body {
     }
 
     .eventText {
+      background-color: $light_blue;
       float: left;
       width: 175px;
 
@@ -154,6 +158,7 @@ body {
 }
 
 #content {
+  background-color: white;
   min-height: 400px;
   overflow: auto;
   padding: 10px;
@@ -168,8 +173,9 @@ body {
   width: 600px;
 }
 
-.post {
-  $border: yellow;
+.post {  
+  background-color: #F0F0F0;
+  $border: red;
 
   //border: 1px solid $border;
   border-radius: 5px;
@@ -184,7 +190,7 @@ body {
     -moz-border-radius-topright: 5px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    border-bottom: 1px solid $border;
+    //border-bottom: 1px solid $border;
     padding: 5px;
   }
 
@@ -200,7 +206,6 @@ body {
     }
   }
 }
-
 
 #ticker {
   background-color: $blue;

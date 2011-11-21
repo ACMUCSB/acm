@@ -15,10 +15,9 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'therubyracer', :platforms => :ruby
+gem 'therubyracer'
 gem 'jquery-rails'
 gem 'cancan'
-gem 'heroku'
 
 gem 'bcrypt-ruby', :require => 'bcrypt'
 
