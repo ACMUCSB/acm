@@ -1,4 +1,21 @@
 class UsersController < ApplicationController
+  def new
+    @user = User.new
+  end
+  
+  def create
+    @user = User.new(params[:user])
+    if @user.save
+      redirect_to root_url, :notice => "Successfully signed up!"
+    else 
+      render('new')
+    end
+  end
+end
+
+# COMMENTED OUT THE OLD CODE AND STARTING FRESH, YEEHAW
+=begin
+class UsersController < ApplicationController
   # GET /users
   # GET /users.json
   def index
@@ -46,7 +63,7 @@ class UsersController < ApplicationController
     else
       render "new"   
     end          
-=begin
+
     respond_to do |format|
       if @user.save
         format.html { redirect_to @user, notice: 'User was successfully created.' }
@@ -56,7 +73,7 @@ class UsersController < ApplicationController
         format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end
-=end
+
   end
 
   # PUT /users/1
@@ -86,4 +103,6 @@ class UsersController < ApplicationController
       format.json { head :ok }
     end
   end
+
 end
+=end

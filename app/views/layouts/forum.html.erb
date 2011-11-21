@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ACM@UCSB</title>
+    <%= stylesheet_link_tag 'application' %>
+    <%= javascript_include_tag :defaults %>
+    <%= csrf_meta_tag %>
+  </head>
+
+  <body>
+
+    <div id="container">
+
+      <div id="header">
+        <h1 id="title"><%= link_to 'ACM@UCSB', root_path %></h1>
+        <%= render "shared/user_info" %>
+
+        <ul id="nav">
+          <li><%= link_to 'Announcements', root_path %></li>
+          <li><%= link_to 'Forum', forum_path %></li>
+          <li><%= link_to 'About', about_path %></li>
+          <li><%= link_to 'Contact', contact_path %></li>
+          <li><%= link_to 'Sitemap', '/sitemap.txt' %></li>
+        </ul>
+      </div>
+
+      <div id="content">
+        <%# flash.each do |name, msg| %>
+          <%# content_tag :div, msg, :id => "flash#{name}"%>
+        <%# end %>
+        <%= yield %>
+      </div>
+
+      <%= render "shared/footer" %>
+
+    </div>
+
+  </body>
+</html>

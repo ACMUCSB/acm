@@ -13,10 +13,11 @@
 
       <div id="header">
         <h1 id="title"><%= link_to 'ACM@UCSB', root_path %></h1>
+        <%= render "shared/user_info" %>
 
         <ul id="nav">
           <li><%= link_to 'Announcements', root_path %></li>
-          <li><%= link_to 'Forum', '' %></li>
+          <li><%= link_to 'Forum', forum_path %></li>
           <li><%= link_to 'About', about_path %></li>
           <li><%= link_to 'Contact', contact_path %></li>
           <li><%= link_to 'Sitemap', '/sitemap.txt' %></li>
@@ -24,9 +25,9 @@
       </div>
 
       <div id="content">
-        <%# flash.each do |name, msg| %>
-          <%# content_tag :div, msg, :id => "flash#{name}"%>
-        <%# end %>
+        <% flash.each do |name, msg| %>
+          <%= content_tag :div, msg, :id => "flash#{name}"%>
+        <% end %>
         <div id="timeline">
           <!-- THESE ARE HTML PLACEHOLDERS PURELY FOR STYLING WHAT WILL BE DYNAMICALLY-GENERATED EVENTS -->
           <div class="event">
@@ -62,8 +63,7 @@
         </div>
       </div>
 
-      <div id="footer">
-      </div>
+      <%= render "shared/footer" %>
 
     </div>
 
