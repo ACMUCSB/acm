@@ -1,26 +1,21 @@
 Acm::Application.routes.draw do
-  
+
   match "/logout"  => "sessions#destroy", :as => "logout"
   match "/login"   => "sessions#new",     :as => "login"
   match "/signup"  => "users#new",        :as => "signup"
 
   match '/about'      => 'static#about',      as: :about
   match '/contact-us' => 'static#contact_us', as: :contact
-  
+
   # change this
-  get "posts/index"
-  get "posts/new"
-  get "posts/create"
-  get "posts/edit"
-  get "posts/update"
-  get "posts/destroy"
   match '/forum' => "posts#index", :as => "forum"
+  resources :posts
 
   resources :users
   resources :sessions
-  
+
   root :to => 'static#index'
-  
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -70,7 +65,7 @@ Acm::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  
+
   # See how all your routes lay out with "rake routes"
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
