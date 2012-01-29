@@ -7,8 +7,10 @@
   <dd>(805) 123-4567</dd>
 </dl>
 
+<dl>
 <%= form_tag '' do %>
-  <%= label_tag 'Leave a comment' %>
-  <%= text_area 'bla', 'bla' %>
-  <%= submit_tag 'Submit' %>
+  <dt><%= label_tag 'Leave a comment' %></dt>
+  <dd><%= text_area(:application, :notes, :cols => 50, :rows => 10, :class => 'app_input') %></dd>
+  <dt><%= submit_tag 'Submit' %></dt>
 <% end %>
+</dl>
