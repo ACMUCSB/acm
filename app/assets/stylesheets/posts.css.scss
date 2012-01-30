@@ -1,3 +1,49 @@
 // Place all the styles related to the posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.new_post {
+  
+  //background-color: #0fc;
+  overflow: auto;
+  margin-bottom: 10px;
+  //padding: 15px; 
+  width: 500px;
+  
+  
+  
+  label, input, textarea {
+    float: left;
+    clear: both;    
+    margin-bottom: 5px;     
+    width: 485px; // 485 px if using 15px of padding
+  }
+  label {
+    font-size: 1.2em;
+  }
+  input {    
+    //background-color: green;
+  }
+  textarea {
+    font-family: inherit;
+    height: 250px;
+    overflow: auto;
+  }
+  .submit {
+    background-color: red;
+    border: none;
+    margin: 0;
+    padding: 6px;
+    width: auto;
+    
+    &:hover {
+      background-color: blue;
+      cursor: pointer;
+    }
+    &:active {
+      // Styling for when the button is clicked
+      background-color: orange;
+    }
+  }
+}
