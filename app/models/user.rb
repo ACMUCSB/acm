@@ -27,6 +27,11 @@ class User < ActiveRecord::Base
   def admin?
     false # change this
   end
+  
+  def logged_in?
+    # TO DO: return true if session[:user_id] exists, else false
+    
+  end
 
 
 end

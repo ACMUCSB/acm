@@ -28,12 +28,14 @@ class Ability
     
     if user.admin?
       can :manage, :all
-    else
-      
-      # can [:create, :update, :destroy], [Post, Comment], :user_id => user.id
-      
-      can :read, :all
-      can :create, Post   
     end
+    
+    if user.logged_in? # This method is not implemented yet
+      can :create, Post
+      # can [:create, :update, :destroy], [Post, Comment], :user_id => user.id
+    end
+    
+    can :read, :all
+    
   end
 end
