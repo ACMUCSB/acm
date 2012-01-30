@@ -1,7 +1,7 @@
-<%= form_for @post do |f| %>
+<%= form_for @post, :html => { :class => "new_post"} do |f| %>
   <%= f.label :title %>
   <%= f.text_field :title %>
   <%= f.label :body %>
   <%= f.text_area :body %>
-  <%= f.submit %>
+  <%= f.submit :class => "submit" %>
 <% end %>
