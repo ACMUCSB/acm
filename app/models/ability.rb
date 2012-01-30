@@ -25,10 +25,15 @@ class Ability
     #
     # See the wiki for details: https://github.com/ryanb/cancan/wiki/Defining-Abilities
     user ||= User.new
+    
     if user.admin?
       can :manage, :all
     else
+      
+      # can [:create, :update, :destroy], [Post, Comment], :user_id => user.id
+      
       can :read, :all
+      can :create, Post   
     end
   end
 end
