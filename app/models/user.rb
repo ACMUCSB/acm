@@ -28,9 +28,10 @@ class User < ActiveRecord::Base
     false # change this
   end
   
-  def logged_in?
+  def self.logged_in?
     # TO DO: return true if session[:user_id] exists, else false
-    
+    #!session[:user_id].nil? # session is out of scope here
+    !@current_user.nil? # This doesn't work
   end
 
 
