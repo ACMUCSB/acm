@@ -2,14 +2,14 @@ class PostsController < ApplicationController
 
   layout 'forum'
   load_and_authorize_resource
-    
-    
+
+
   # METHOD ORGANIZATION:
   #  - create
   #  - read
   #  - update
   #  - delete
-  
+
 
   #---------- CREATE
   def new
@@ -21,7 +21,8 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(params[:post])
     @post.user_id = @current_user.id
-    
+
+    # TODO add flash messages
     if @post.save
       redirect_to posts_path
     else
@@ -29,17 +30,17 @@ class PostsController < ApplicationController
       render :new
     end
   end
-  
-  
+
+
   #---------- READ
   def index
     # The index of the forum; a display of all posts
     @posts = Post.all
   end
-  
+
   def show
     # Show a single post
-    # @post = Post.find(params[:id])  
+    @post = Post.find(params[:id])
   end
 
 
@@ -52,10 +53,10 @@ class PostsController < ApplicationController
 
   def update
     @post = Post.find(params[:id])
-    
+
     if @post.update_attributes
-      redirect_to posts_path # Temporary while flash is not standardized  
-      #redirect_to(posts_path, :flash => {:type => "action", :msg => "Post updated successfully"})         
+      redirect_to posts_path # Temporary while flash is not standardized
+      #redirect_to(posts_path, :flash => {:type => "action", :msg => "Post updated successfully"})
     else
       # Update fails - redisplay the form
       render :edit
@@ -64,9 +65,10 @@ class PostsController < ApplicationController
 
 
   #---------- DELETE
-  def destroy    
-    Post.find(params[:id]).destroy
-    redirect_to posts_path # Temporary while flash is not standardized     
+  def destroy
+    @post = Post.find(params[:id])
+    @post.destroy
+    redirect_to posts_path # Temporary while flash is not standardized
     #redirect_to(posts_path, :flash => {:type => "action", :msg => "Post deleted succesfully."})
   end
 

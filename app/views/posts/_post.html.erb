@@ -3,9 +3,9 @@
   which is used for the front page. We should probably
   put the styles for this display in posts.css.scss,
   and consider changing the names so we don't have
-  a bunch of overlap -Andrew	
+  a bunch of overlap -Andrew
 -->
 <div class="post">
-	<h3><%= post.title %></h1>
+	<h3><%= link_to post.title, post %></h1>
 	<p><%= post.body %></p>
 </div>

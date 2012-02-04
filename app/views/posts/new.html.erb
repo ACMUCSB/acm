@@ -1,3 +1,9 @@
 <h1>Create a thread</h1>
 
-<%= render 'form' %>
+<%= form_for @post, :html => { :class => "new_post"} do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :body %>
+  <%= f.text_area :body %>
+  <%= f.submit :class => "submit" %>
+<% end %>

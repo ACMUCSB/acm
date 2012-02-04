@@ -1,8 +1,5 @@
 <%= link_to 'Create a thread', new_post_path %>
 
 <% @posts.each do |post| %>
-  <%=
-  	# Renders _post.html.erb
-  	render post
-  %>
+  <%= render post %>
 <% end %>

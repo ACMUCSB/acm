@@ -1,0 +1,7 @@
+<%= form_for post, :html => { :class => "new_post"} do |f| %>
+  <%= hidden_field_tag 'post[parent_id]', parent.id %>
+  <%= hidden_field_tag 'post[title]', 're: ' + parent.title %>
+  <%= f.label :body, 'Reply' %>
+  <%= f.text_area :body %>
+  <%= f.submit :class => "submit" %>
+<% end %>
