@@ -32,6 +32,8 @@ GEM
     addressable (2.2.6)
     ansi (1.4.1)
     arel (2.2.1)
+    awesome_nested_set (2.1.2)
+      activerecord (>= 3.0.0)
     bcrypt-ruby (3.0.1)
     bcrypt-ruby (3.0.1-x86-mingw32)
     builder (3.0.0)
@@ -129,6 +131,7 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  awesome_nested_set
   bcrypt-ruby
   cancan
   coffee-rails (~> 3.1.1)

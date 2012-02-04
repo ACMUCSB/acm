@@ -19,7 +19,7 @@ gem 'therubyracer', :platforms => :ruby
 gem 'jquery-rails'
 gem 'cancan'
 gem 'heroku'
-
+gem 'awesome_nested_set'
 gem 'bcrypt-ruby', :require => 'bcrypt'
 
 # To use ActiveModel has_secure_password
