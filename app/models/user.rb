@@ -7,6 +7,7 @@ class User < ActiveRecord::Base
   validates_presence_of :password, :on => :create
   validates_presence_of :email
   validates_uniqueness_of :email
+  # TODO add email validation (some .ucsb.edu suffix?)
 
   def self.authenticate(email, password)
     user= find_by_email(email)
@@ -25,14 +26,8 @@ class User < ActiveRecord::Base
   end
 
   def admin?
-    false # change this
+    # TODO admin + officers stored in db
+    false
   end
-  
-  def self.logged_in?
-    # TO DO: return true if session[:user_id] exists, else false
-    #!session[:user_id].nil? # session is out of scope here
-    !@current_user.nil? # This doesn't work
-  end
-
 
 end

@@ -25,17 +25,17 @@ class Ability
     #
     # See the wiki for details: https://github.com/ryanb/cancan/wiki/Defining-Abilities
     user ||= User.new
-    
+
     if user.admin?
       can :manage, :all
     end
-    
-    if user.logged_in? # This method is not implemented yet
+
+    if user.id # check that the user is logged in -- otherwise User.new
       can :create, Post
-      # can [:create, :update, :destroy], [Post, Comment], :user_id => user.id
+      can :update, Post, :user_id => user.id
     end
-    
+
     can :read, :all
-    
+
   end
 end
