@@ -37,6 +37,15 @@ h2 {
   font-size: 1.4em;
 }
 
+a {
+  color: yellow;
+  text-decoration: none;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 body {
   background-color: #2A2F5D;
   font-family: Arial, Helvetica, sans-serif;
@@ -62,6 +71,8 @@ body {
   margin-bottom: 10px;
   text-align: center;
 }
+
+//-------------------- These need to be standardized and changed
 #flash_alert {
   background: pink;
   color: red;
@@ -72,33 +83,31 @@ body {
 }
 
 #header {
-  background-color: $dark_blue;
-  overflow: auto;
-  padding: 10px 0 0; //10px 30px 0  
+  background-color: $dark_blue;  
+  padding: 5px 0 0;
 
   #title {
-    margin-left: 10px;
+    margin: 0 0 5px 15px;
+    
+    a:hover { text-decoration: none; }   
   }
   
   #user_info {
+    color: white;
     float: right;
-    width: 500px;
-  }
-
-  a {
-    color: yellow;
-    text-decoration: none;
-  }
+    margin: 10px 15px 0 0;    
+  }  
 }
 
 #nav {
   background-color: #6699FF;
-  clear: both;
-  overflow: hidden;
-  border-top: 1px solid #aaa;
+  clear: both;  
+  overflow: auto;
+  //border-top: 1px solid #aaa;
 
   li {
     margin: 10px;
+    margin-bottom: 0;
 
     a {
       background-color: $blue;
@@ -108,7 +117,9 @@ body {
       padding: 3px 7px;
 
       &:hover {
-        background-color: orange;
+        background-color: yellow;
+        color: $dark_blue;        
+        text-decoration: none;
       }
     }
   }
@@ -212,24 +223,30 @@ body {
 }
 
 #ticker {
-  background-color: $blue;
+  //background-color: $blue;
   float: right;
   margin: 0;
   padding: 0;
   //min-height: 400px;
   width: 320px;
 
-  h3 {
-    //background-color: #CCC;
-    border-bottom: 1px solid yellow;
+  h3 {   
+    border-bottom: 2px solid $blue;
+    color: $blue;
+    font-size: 1.3em;
     margin-bottom: 15px;
     padding-left: 5px;
   }
 
   .tickerPost {
-    background-color: white;
+    background-color: white;   
     border: 1px solid blue;
+    border-bottom: 1px solid white;  
     padding-left: 5px;
+    
+    &:last-child {       
+       border-bottom: 1px solid blue;
+    }
   }
 }
 
